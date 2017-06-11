@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\WebstormProjects\\201703node\\day1\\pack',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\fusiyang\AppData\Roaming\npm-cache\fsy-first-pack\1.0.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\fusiyang\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle fsy-first-pack@1.0.1~prepublish: fsy-first-pack@1.0.1
+11 silly lifecycle fsy-first-pack@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\fusiyang\\AppData\\Roaming\\npm-cache\\fsy-first-pack\\1.0.1\\package.tgz',
+12 verbose tar pack   'D:\\WebstormProjects\\201703node\\day1\\pack' ]
+13 verbose tarball C:\Users\fusiyang\AppData\Roaming\npm-cache\fsy-first-pack\1.0.1\package.tgz
+14 verbose folder D:\WebstormProjects\201703node\day1\pack
+15 verbose addLocalTarball adding from inside cache C:\Users\fusiyang\AppData\Roaming\npm-cache\fsy-first-pack\1.0.1\package.tgz
+16 verbose correctMkdir C:\Users\fusiyang\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd fsy-first-pack@1.0.1
+18 verbose afterAdd C:\Users\fusiyang\AppData\Roaming\npm-cache\fsy-first-pack\1.0.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\fusiyang\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\fusiyang\AppData\Roaming\npm-cache\fsy-first-pack\1.0.1\package\package.json written
+21 silly publish { name: 'fsy-first-pack',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: '',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [],
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'fsy-first-pack@1.0.1',
+21 silly publish   _shasum: '76b104be8cb3466d93f220ac8b8e3f14cb8f4c5e',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name fsy-first-pack
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'fsy-first-pack',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'fsy-first-pack',
+26 silly mapToRegistry   name: 'fsy-first-pack',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/fsy-first-pack
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\fusiyang\AppData\Roaming\npm-cache\fsy-first-pack\1.0.1\package.tgz
+30 verbose request uri https://registry.npmjs.org/fsy-first-pack
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:56:13
+33 verbose request using bearer token for auth
+34 verbose request id a940ab7893e57173
+35 http request PUT https://registry.npmjs.org/fsy-first-pack
+36 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+37 info attempt registry request try #2 at 12:56:23
+38 verbose request using bearer token for auth
+39 http request PUT https://registry.npmjs.org/fsy-first-pack
+40 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+41 info attempt registry request try #3 at 12:57:23
+42 verbose request using bearer token for auth
+43 http request PUT https://registry.npmjs.org/fsy-first-pack
+44 verbose request invalidating C:\Users\fusiyang\AppData\Roaming\npm-cache\registry.npmjs.org\fsy-first-pack on PUT
+45 error publish Failed PUT undefined
+46 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+46 verbose stack     at errnoException (dns.js:28:10)
+46 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+47 verbose cwd D:\WebstormProjects\201703node\day1\pack
+48 error Windows_NT 10.0.14393
+49 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+50 error node v6.10.1
+51 error npm  v3.10.10
+52 error code ENOTFOUND
+53 error errno ENOTFOUND
+54 error syscall getaddrinfo
+55 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+56 error network This is most likely not a problem with npm itself
+56 error network and is related to network connectivity.
+56 error network In most cases you are behind a proxy or have bad network settings.
+56 error network
+56 error network If you are behind a proxy, please make sure that the
+56 error network 'proxy' config is set properly.  See: 'npm help config'
+57 verbose exit [ 1, true ]
