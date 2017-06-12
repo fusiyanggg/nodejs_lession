@@ -39,6 +39,7 @@ function die() {
     console.log('die');
 }
 
-girl.on('run', cry);
-girl.on('run', die);
-girl.emit('run');
+girl.on('失恋', cry);
+girl.on('失恋', die);
+//如果发布的时候需要传入一些参数要订阅的事件执行
+girl.emit('失恋', '大声哭', '跳楼');
